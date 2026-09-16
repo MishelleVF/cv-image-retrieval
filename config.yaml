@@ -1,5 +1,5 @@
 project:
-  name: "plant-disease-cv"
+  name: "cv-image-retrieval"
   seed: 42
 
 paths:
