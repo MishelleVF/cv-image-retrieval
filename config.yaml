@@ -1,0 +1,30 @@
+project:
+  name: "plant-disease-cv"
+  seed: 42
+
+paths:
+  raw_data: "data/raw"
+  interim_data: "data/interim"
+  processed_data: "data/processed"
+
+  figures: "outputs/figures"
+  models: "outputs/models"
+  metrics: "outputs/metrics"
+
+image:
+  width: 224
+  height: 224
+  channels: 3
+
+dataset:
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+preprocessing:
+  normalize: true
+  remove_corrupted: true
+
+training:
+  batch_size: 32
+  epochs: 30

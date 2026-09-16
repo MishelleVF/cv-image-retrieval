@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Dataset
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Outputs generated during experiments
+outputs/models/*
+outputs/figures/*
+outputs/metrics/*
+
+# Keep folders even when empty
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!outputs/models/.gitkeep
+!outputs/figures/.gitkeep
+!outputs/metrics/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
