@@ -7,5 +7,6 @@ scikit-image
 scikit-learn
 PyYAML
 tqdm
+kagglehub
 jupyter
 ipykernel

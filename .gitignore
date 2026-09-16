@@ -1,36 +1,62 @@
+# =========================
 # Python
+# =========================
 __pycache__/
 *.py[cod]
+*.pyd
 
+# =========================
 # Virtual environments
+# =========================
 .venv/
 venv/
 env/
 
+# =========================
 # Jupyter
+# =========================
 .ipynb_checkpoints/
 
+# =========================
 # VS Code
+# =========================
 .vscode/
 
-# Dataset
-data/raw/*
-data/interim/*
-data/processed/*
+# =========================
+# Local data
+# =========================
+data/local/*
+!data/local/.gitkeep
 
-# Outputs generated during experiments
-outputs/models/*
-outputs/figures/*
+# =========================
+# Generated outputs
+# =========================
+outputs/descriptors/*
+outputs/vocabularies/*
+outputs/representations/*
+outputs/rankings/*
 outputs/metrics/*
+outputs/figures/*
 
-# Keep folders even when empty
-!data/raw/.gitkeep
-!data/interim/.gitkeep
-!data/processed/.gitkeep
-!outputs/models/.gitkeep
-!outputs/figures/.gitkeep
+# Preserve output folders
+!outputs/descriptors/.gitkeep
+!outputs/vocabularies/.gitkeep
+!outputs/representations/.gitkeep
+!outputs/rankings/.gitkeep
 !outputs/metrics/.gitkeep
+!outputs/figures/.gitkeep
 
+# =========================
+# Models / serialized data
+# =========================
+*.pkl
+*.pickle
+*.joblib
+*.npy
+*.npz
+
+# =========================
 # OS
+# =========================
 .DS_Store
 Thumbs.db

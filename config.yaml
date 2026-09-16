@@ -2,29 +2,37 @@ project:
   name: "cv-image-retrieval"
   seed: 42
 
-paths:
-  raw_data: "data/raw"
-  interim_data: "data/interim"
-  processed_data: "data/processed"
-
-  figures: "outputs/figures"
-  models: "outputs/models"
-  metrics: "outputs/metrics"
-
-image:
-  width: 224
-  height: 224
-  channels: 3
-
 dataset:
-  train_ratio: 0.70
-  val_ratio: 0.15
-  test_ratio: 0.15
+  provider: "kagglehub"
+  handle: "skylord/oxbuildings"
 
-preprocessing:
-  normalize: true
-  remove_corrupted: true
+retrieval:
+  top_k: 5
 
-training:
-  batch_size: 32
-  epochs: 30
+features:
+
+  sift:
+    enabled: true
+    nfeatures: 0
+
+  hog:
+    enabled: true
+    orientations: 9
+    pixels_per_cell: [8, 8]
+    cells_per_block: [2, 2]
+
+  bovw:
+    enabled: true
+    vocabulary_size: 256
+
+similarity:
+  metric: "cosine"
+
+paths:
+  outputs: "outputs"
+  descriptors: "outputs/descriptors"
+  vocabularies: "outputs/vocabularies"
+  representations: "outputs/representations"
+  rankings: "outputs/rankings"
+  metrics: "outputs/metrics"
+  figures: "outputs/figures"
