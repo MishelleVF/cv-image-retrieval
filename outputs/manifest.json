@@ -1,0 +1,11 @@
+{
+  "metrics": "outputs/metrics/metrics.json",
+  "rankings": "outputs/rankings/top5_rankings.json",
+  "ground_truth_used": "outputs/representations/ground_truth_used.json",
+  "qualitative_figures": [
+    "/home/juan-prochazka/Desktop/Vision/P1/cv-image-retrieval/outputs/figures/all_souls_000000_top5.png",
+    "/home/juan-prochazka/Desktop/Vision/P1/cv-image-retrieval/outputs/figures/ashmolean_000000_top5.png",
+    "/home/juan-prochazka/Desktop/Vision/P1/cv-image-retrieval/outputs/figures/balliol_000000_top5.png",
+    "/home/juan-prochazka/Desktop/Vision/P1/cv-image-retrieval/outputs/figures/bodleian_000000_top5.png"
+  ]
+}

@@ -47,6 +47,20 @@ outputs/figures/*
 !outputs/figures/.gitkeep
 
 # =========================
+# Image and media assets
+# =========================
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+*.tif
+*.tiff
+*.webp
+*.svg
+data/downloads/*
+
+# =========================
 # Models / serialized data
 # =========================
 *.pkl
