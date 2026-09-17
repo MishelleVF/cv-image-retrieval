@@ -46,6 +46,16 @@ outputs/figures/*
 !outputs/metrics/.gitkeep
 !outputs/figures/.gitkeep
 
+# Keep generated evaluation artifacts tracked
+!outputs/metrics/
+!outputs/metrics/*.json
+!outputs/rankings/
+!outputs/rankings/*.json
+!outputs/representations/
+!outputs/representations/*.json
+!outputs/figures/
+!outputs/figures/*.png
+
 # =========================
 # Image and media assets
 # =========================

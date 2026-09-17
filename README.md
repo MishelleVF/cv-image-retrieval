@@ -2,15 +2,17 @@
 
 This repo is a bounded MVP for the midterm image retrieval project. It generates the data needed for the report/presentation without a large experiment framework.
 
-## Run
+## Usage
+
+Default, supported run:
 
 ```bash
 python3 scripts/evaluate.py
 ```
 
-Place a small Oxford/Paris subset under `data/local` first. The script does not download the full Kaggle archive by default because it is multi-GB. To explicitly allow that download:
+This project currently uses raw coarse retrieval only. Geometric reranking is disabled in the evaluation pipeline because it degraded mAP on this corpus and was not a valid improvement.
 
-TODO: This is incorrect. It should never operate on subsets if not explicitly allowed by the user.
+If the dataset is not already present locally, you can allow the project to fetch the Oxford-style archive automatically:
 
 ```bash
 CVIR_ALLOW_DOWNLOAD=1 python3 scripts/evaluate.py
@@ -24,6 +26,8 @@ work runs concurrently; set `CVIR_WORKERS` to control the number of workers and
 ```bash
 CVIR_ALLOW_DOWNLOAD=1 CVIR_WORKERS=16 CVIR_LOG_LEVEL=INFO python3 scripts/evaluate.py
 ```
+
+The default baseline is the strongest validated option in this repo: raw coarse ranking with the learned metric embedding when enabled by the representation pipeline.
 
 The run creates:
 

@@ -1,0 +1,272 @@
+{
+  "constraints": {
+    "bovw_vocabulary_size": 96,
+    "dataset_subsampling": "none",
+    "query_subsampling": "none",
+    "note": "All available images and all evaluable queries are used. The default pipeline uses raw coarse retrieval only; SIFT geometric reranking is currently disabled because it degraded mAP in validation. The learned embedding is a linear metric-learning projection trained on landmark labels."
+  },
+  "dataset": {
+    "root": "/home/juan-prochazka/Desktop/Vision/P1/cv-image-retrieval/data/local",
+    "available_images": 5063,
+    "evaluated_images": 5063,
+    "evaluated_queries": 17
+  },
+  "representations": {
+    "bovw": {
+      "cosine": {
+        "coarse_candidate_pool": 0,
+        "raw": {
+          "mAP": 0.0697660301584243,
+          "mean_precision_at_5": 0.058823529411764705,
+          "precision_at_5_by_query": {
+            "all_souls_000000.jpg": 0.2,
+            "ashmolean_000000.jpg": 0.2,
+            "balliol_000000.jpg": 0.0,
+            "bodleian_000000.jpg": 0.0,
+            "christ_church_000000.jpg": 0.2,
+            "cornmarket_000004.jpg": 0.0,
+            "hertford_000008.jpg": 0.0,
+            "jesus_000000.jpg": 0.0,
+            "keble_000000.jpg": 0.2,
+            "magdalen_000000.jpg": 0.0,
+            "new_000001.jpg": 0.2,
+            "oriel_000000.jpg": 0.0,
+            "oxford_000006.jpg": 0.0,
+            "pitt_rivers_000000.jpg": 0.0,
+            "radcliffe_camera_000000.jpg": 0.0,
+            "trinity_000000.jpg": 0.0,
+            "worcester_000001.jpg": 0.0
+          }
+        },
+        "reranked": {
+          "mAP": 0.0697660301584243,
+          "mean_precision_at_5": 0.058823529411764705,
+          "precision_at_5_by_query": {
+            "all_souls_000000.jpg": 0.2,
+            "ashmolean_000000.jpg": 0.2,
+            "balliol_000000.jpg": 0.0,
+            "bodleian_000000.jpg": 0.0,
+            "christ_church_000000.jpg": 0.2,
+            "cornmarket_000004.jpg": 0.0,
+            "hertford_000008.jpg": 0.0,
+            "jesus_000000.jpg": 0.0,
+            "keble_000000.jpg": 0.2,
+            "magdalen_000000.jpg": 0.0,
+            "new_000001.jpg": 0.2,
+            "oriel_000000.jpg": 0.0,
+            "oxford_000006.jpg": 0.0,
+            "pitt_rivers_000000.jpg": 0.0,
+            "radcliffe_camera_000000.jpg": 0.0,
+            "trinity_000000.jpg": 0.0,
+            "worcester_000001.jpg": 0.0
+          }
+        }
+      },
+      "euclidean": {
+        "coarse_candidate_pool": 0,
+        "raw": {
+          "mAP": 0.06953189629483865,
+          "mean_precision_at_5": 0.047058823529411764,
+          "precision_at_5_by_query": {
+            "all_souls_000000.jpg": 0.2,
+            "ashmolean_000000.jpg": 0.2,
+            "balliol_000000.jpg": 0.0,
+            "bodleian_000000.jpg": 0.0,
+            "christ_church_000000.jpg": 0.2,
+            "cornmarket_000004.jpg": 0.0,
+            "hertford_000008.jpg": 0.0,
+            "jesus_000000.jpg": 0.0,
+            "keble_000000.jpg": 0.0,
+            "magdalen_000000.jpg": 0.0,
+            "new_000001.jpg": 0.2,
+            "oriel_000000.jpg": 0.0,
+            "oxford_000006.jpg": 0.0,
+            "pitt_rivers_000000.jpg": 0.0,
+            "radcliffe_camera_000000.jpg": 0.0,
+            "trinity_000000.jpg": 0.0,
+            "worcester_000001.jpg": 0.0
+          }
+        },
+        "reranked": {
+          "mAP": 0.06953189629483865,
+          "mean_precision_at_5": 0.047058823529411764,
+          "precision_at_5_by_query": {
+            "all_souls_000000.jpg": 0.2,
+            "ashmolean_000000.jpg": 0.2,
+            "balliol_000000.jpg": 0.0,
+            "bodleian_000000.jpg": 0.0,
+            "christ_church_000000.jpg": 0.2,
+            "cornmarket_000004.jpg": 0.0,
+            "hertford_000008.jpg": 0.0,
+            "jesus_000000.jpg": 0.0,
+            "keble_000000.jpg": 0.0,
+            "magdalen_000000.jpg": 0.0,
+            "new_000001.jpg": 0.2,
+            "oriel_000000.jpg": 0.0,
+            "oxford_000006.jpg": 0.0,
+            "pitt_rivers_000000.jpg": 0.0,
+            "radcliffe_camera_000000.jpg": 0.0,
+            "trinity_000000.jpg": 0.0,
+            "worcester_000001.jpg": 0.0
+          }
+        }
+      }
+    },
+    "hog": {
+      "cosine": {
+        "coarse_candidate_pool": 0,
+        "raw": {
+          "mAP": 0.0629704812744901,
+          "mean_precision_at_5": 0.058823529411764705,
+          "precision_at_5_by_query": {
+            "all_souls_000000.jpg": 0.2,
+            "ashmolean_000000.jpg": 0.0,
+            "balliol_000000.jpg": 0.0,
+            "bodleian_000000.jpg": 0.0,
+            "christ_church_000000.jpg": 0.0,
+            "cornmarket_000004.jpg": 0.0,
+            "hertford_000008.jpg": 0.0,
+            "jesus_000000.jpg": 0.0,
+            "keble_000000.jpg": 0.0,
+            "magdalen_000000.jpg": 0.2,
+            "new_000001.jpg": 0.0,
+            "oriel_000000.jpg": 0.0,
+            "oxford_000006.jpg": 0.6,
+            "pitt_rivers_000000.jpg": 0.0,
+            "radcliffe_camera_000000.jpg": 0.0,
+            "trinity_000000.jpg": 0.0,
+            "worcester_000001.jpg": 0.0
+          }
+        },
+        "reranked": {
+          "mAP": 0.0629704812744901,
+          "mean_precision_at_5": 0.058823529411764705,
+          "precision_at_5_by_query": {
+            "all_souls_000000.jpg": 0.2,
+            "ashmolean_000000.jpg": 0.0,
+            "balliol_000000.jpg": 0.0,
+            "bodleian_000000.jpg": 0.0,
+            "christ_church_000000.jpg": 0.0,
+            "cornmarket_000004.jpg": 0.0,
+            "hertford_000008.jpg": 0.0,
+            "jesus_000000.jpg": 0.0,
+            "keble_000000.jpg": 0.0,
+            "magdalen_000000.jpg": 0.2,
+            "new_000001.jpg": 0.0,
+            "oriel_000000.jpg": 0.0,
+            "oxford_000006.jpg": 0.6,
+            "pitt_rivers_000000.jpg": 0.0,
+            "radcliffe_camera_000000.jpg": 0.0,
+            "trinity_000000.jpg": 0.0,
+            "worcester_000001.jpg": 0.0
+          }
+        }
+      },
+      "euclidean": {
+        "coarse_candidate_pool": 0,
+        "raw": {
+          "mAP": 0.06297320707711448,
+          "mean_precision_at_5": 0.058823529411764705,
+          "precision_at_5_by_query": {
+            "all_souls_000000.jpg": 0.2,
+            "ashmolean_000000.jpg": 0.0,
+            "balliol_000000.jpg": 0.0,
+            "bodleian_000000.jpg": 0.0,
+            "christ_church_000000.jpg": 0.0,
+            "cornmarket_000004.jpg": 0.0,
+            "hertford_000008.jpg": 0.0,
+            "jesus_000000.jpg": 0.0,
+            "keble_000000.jpg": 0.0,
+            "magdalen_000000.jpg": 0.2,
+            "new_000001.jpg": 0.0,
+            "oriel_000000.jpg": 0.0,
+            "oxford_000006.jpg": 0.6,
+            "pitt_rivers_000000.jpg": 0.0,
+            "radcliffe_camera_000000.jpg": 0.0,
+            "trinity_000000.jpg": 0.0,
+            "worcester_000001.jpg": 0.0
+          }
+        },
+        "reranked": {
+          "mAP": 0.06297320707711448,
+          "mean_precision_at_5": 0.058823529411764705,
+          "precision_at_5_by_query": {
+            "all_souls_000000.jpg": 0.2,
+            "ashmolean_000000.jpg": 0.0,
+            "balliol_000000.jpg": 0.0,
+            "bodleian_000000.jpg": 0.0,
+            "christ_church_000000.jpg": 0.0,
+            "cornmarket_000004.jpg": 0.0,
+            "hertford_000008.jpg": 0.0,
+            "jesus_000000.jpg": 0.0,
+            "keble_000000.jpg": 0.0,
+            "magdalen_000000.jpg": 0.2,
+            "new_000001.jpg": 0.0,
+            "oriel_000000.jpg": 0.0,
+            "oxford_000006.jpg": 0.6,
+            "pitt_rivers_000000.jpg": 0.0,
+            "radcliffe_camera_000000.jpg": 0.0,
+            "trinity_000000.jpg": 0.0,
+            "worcester_000001.jpg": 0.0
+          }
+        }
+      }
+    },
+    "learned": {
+      "cosine": {
+        "coarse_candidate_pool": 0,
+        "raw": {
+          "mAP": 0.07515306419181757,
+          "mean_precision_at_5": 0.10588235294117647,
+          "precision_at_5_by_query": {
+            "all_souls_000000.jpg": 0.0,
+            "ashmolean_000000.jpg": 0.2,
+            "balliol_000000.jpg": 0.0,
+            "bodleian_000000.jpg": 0.0,
+            "christ_church_000000.jpg": 0.0,
+            "cornmarket_000004.jpg": 0.0,
+            "hertford_000008.jpg": 0.0,
+            "jesus_000000.jpg": 0.2,
+            "keble_000000.jpg": 0.0,
+            "magdalen_000000.jpg": 0.2,
+            "new_000001.jpg": 0.0,
+            "oriel_000000.jpg": 0.2,
+            "oxford_000006.jpg": 0.2,
+            "pitt_rivers_000000.jpg": 0.0,
+            "radcliffe_camera_000000.jpg": 0.6,
+            "trinity_000000.jpg": 0.2,
+            "worcester_000001.jpg": 0.0
+          }
+        },
+        "reranked": {
+          "mAP": 0.07515306419181757,
+          "mean_precision_at_5": 0.10588235294117647,
+          "precision_at_5_by_query": {
+            "all_souls_000000.jpg": 0.0,
+            "ashmolean_000000.jpg": 0.2,
+            "balliol_000000.jpg": 0.0,
+            "bodleian_000000.jpg": 0.0,
+            "christ_church_000000.jpg": 0.0,
+            "cornmarket_000004.jpg": 0.0,
+            "hertford_000008.jpg": 0.0,
+            "jesus_000000.jpg": 0.2,
+            "keble_000000.jpg": 0.0,
+            "magdalen_000000.jpg": 0.2,
+            "new_000001.jpg": 0.0,
+            "oriel_000000.jpg": 0.2,
+            "oxford_000006.jpg": 0.2,
+            "pitt_rivers_000000.jpg": 0.0,
+            "radcliffe_camera_000000.jpg": 0.6,
+            "trinity_000000.jpg": 0.2,
+            "worcester_000001.jpg": 0.0
+          }
+        }
+      }
+    }
+  },
+  "reranking": {
+    "candidate_pool_size": 0,
+    "method": "disabled",
+    "description": "Geometric reranking is disabled in the default pipeline. Raw coarse retrieval is used for all reported metrics."
+  }
+}

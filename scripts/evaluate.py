@@ -27,6 +27,7 @@ from src.evaluation.metrics import mean_average_precision, precision_at_k
 from src.features.bovw import build_vocabulary_from_dataset
 from src.features.hog import compute_hog_matrix, image_hog
 from src.features.metric_learning import LearnedMetricEmbedding, compute_fused_feature_matrix, fused_descriptor_for_path
+from src.retrieval.rerank import rerank_by_sift_similarity
 from src.retrieval.search import cosine_rank, euclidean_rank
 from src.utils.config import OUTPUT_DIR, PROJECT_ROOT, ensure_dirs
 from src.utils.progress import configure_logging
@@ -51,6 +52,13 @@ def _rank_query(
     return [ids[index] for index in order if ids[index] != query_id]
 
 
+def _rerank_query(query_id: str, initial_ranked: list[str], dataset_root: Path, top_candidates: int = 0) -> list[str]:
+    if top_candidates <= 0:
+        return list(initial_ranked)
+    candidates = initial_ranked[: max(1, top_candidates)]
+    return rerank_by_sift_similarity(query_id, candidates, dataset_root, top_candidates=len(candidates), top_matches=8)
+
+
 def _evaluate_representation(
     name: str,
     matrix,
@@ -58,6 +66,8 @@ def _evaluate_representation(
     query_vectors: dict[str, object],
     ground_truth: dict[str, list[str]],
     metrics: tuple[str, ...],
+    dataset_root: Path,
+    rerank_candidates: int = 0,
 ) -> tuple[dict, dict]:
     rankings: dict[str, dict[str, list[str]]] = {}
     summary: dict[str, dict] = {}
@@ -72,8 +82,8 @@ def _evaluate_representation(
             for query_id, relevant in ground_truth.items()
             if query_id in ranked_lists
         }
-        rankings[metric] = {query_id: ranked[:TOP_K] for query_id, ranked in ranked_lists.items()}
-        summary[metric] = {
+
+        raw_summary = {
             "mAP": mean_average_precision(query_relevant_map, ranked_lists),
             "mean_precision_at_5": sum(
                 precision_at_k(relevant, ranked_lists.get(query_id, []), TOP_K)
@@ -84,6 +94,34 @@ def _evaluate_representation(
                 query_id: precision_at_k(relevant, ranked_lists.get(query_id, []), TOP_K)
                 for query_id, relevant in query_relevant_map.items()
             },
+        }
+
+        if rerank_candidates <= 0:
+            reranked_lists = {query_id: list(ranked) for query_id, ranked in ranked_lists.items()}
+            reranked_summary = raw_summary
+        else:
+            reranked_lists = {
+                query_id: _rerank_query(query_id, ranked, dataset_root, top_candidates=rerank_candidates)
+                for query_id, ranked in ranked_lists.items()
+            }
+            reranked_summary = {
+                "mAP": mean_average_precision(query_relevant_map, reranked_lists),
+                "mean_precision_at_5": sum(
+                    precision_at_k(relevant, reranked_lists.get(query_id, []), TOP_K)
+                    for query_id, relevant in query_relevant_map.items()
+                )
+                / max(len(query_relevant_map), 1),
+                "precision_at_5_by_query": {
+                    query_id: precision_at_k(relevant, reranked_lists.get(query_id, []), TOP_K)
+                    for query_id, relevant in query_relevant_map.items()
+                },
+            }
+
+        rankings[metric] = {query_id: ranked[:TOP_K] for query_id, ranked in reranked_lists.items()}
+        summary[metric] = {
+            "coarse_candidate_pool": rerank_candidates,
+            "raw": raw_summary,
+            "reranked": reranked_summary,
         }
 
     return rankings, summary
@@ -164,10 +202,24 @@ def main() -> None:
     }
 
     bovw_rankings, bovw_metrics = _evaluate_representation(
-        "bovw", bovw_matrix, bovw_ids, bovw_query_vectors, ground_truth, ("cosine", "euclidean")
+        "bovw",
+        bovw_matrix,
+        bovw_ids,
+        bovw_query_vectors,
+        ground_truth,
+        ("cosine", "euclidean"),
+        dataset_root=dataset_root,
+        rerank_candidates=0,
     )
     hog_rankings, hog_metrics = _evaluate_representation(
-        "hog", hog_matrix, hog_ids, hog_query_vectors, ground_truth, ("cosine", "euclidean")
+        "hog",
+        hog_matrix,
+        hog_ids,
+        hog_query_vectors,
+        ground_truth,
+        ("cosine", "euclidean"),
+        dataset_root=dataset_root,
+        rerank_candidates=0,
     )
     learned_rankings, learned_metrics = _evaluate_representation(
         "learned",
@@ -176,6 +228,8 @@ def main() -> None:
         learned_query_vectors,
         ground_truth,
         ("cosine",),
+        dataset_root=dataset_root,
+        rerank_candidates=0,
     )
     LOGGER.info("Ranking and metric computation complete")
 
@@ -184,7 +238,7 @@ def main() -> None:
             "bovw_vocabulary_size": 96,
             "dataset_subsampling": "none",
             "query_subsampling": "none",
-            "note": "All available images and all evaluable queries are used. BoVW and HOG remain classical features; the learned embedding is a linear metric-learning projection trained on landmark labels.",
+            "note": "All available images and all evaluable queries are used. The default pipeline uses raw coarse retrieval only; SIFT geometric reranking is currently disabled because it degraded mAP in validation. The learned embedding is a linear metric-learning projection trained on landmark labels.",
         },
         "dataset": {
             "root": dataset_root.as_posix(),
@@ -192,7 +246,16 @@ def main() -> None:
             "evaluated_images": len(image_paths),
             "evaluated_queries": len(ground_truth),
         },
-        "representations": {"bovw": bovw_metrics, "hog": hog_metrics, "learned": learned_metrics},
+        "representations": {
+            "bovw": bovw_metrics,
+            "hog": hog_metrics,
+            "learned": learned_metrics,
+        },
+        "reranking": {
+            "candidate_pool_size": 0,
+            "method": "disabled",
+            "description": "Geometric reranking is disabled in the default pipeline. Raw coarse retrieval is used for all reported metrics."
+        },
     }
     rankings = {"bovw": bovw_rankings, "hog": hog_rankings, "learned": learned_rankings}
 
