@@ -1,613 +1,607 @@
 {
-  "bovw": {
-    "cosine": {
-      "all_souls_000000.jpg": [
-        "christ_church_001016.jpg",
-        "magdalen_000811.jpg",
-        "oxford_000342.jpg",
-        "jesus_000398.jpg",
-        "all_souls_000054.jpg"
-      ],
-      "ashmolean_000000.jpg": [
-        "ashmolean_000036.jpg",
-        "oxford_002326.jpg",
-        "oxford_001964.jpg",
-        "oxford_002349.jpg",
-        "bodleian_000002.jpg"
-      ],
-      "balliol_000000.jpg": [
-        "christ_church_000227.jpg",
-        "oxford_001115.jpg",
-        "keble_000031.jpg",
-        "magdalen_000239.jpg",
-        "christ_church_000841.jpg"
-      ],
-      "bodleian_000000.jpg": [
-        "oxford_002286.jpg",
-        "radcliffe_camera_000183.jpg",
-        "radcliffe_camera_000370.jpg",
-        "radcliffe_camera_000201.jpg",
-        "radcliffe_camera_000276.jpg"
-      ],
-      "christ_church_000000.jpg": [
-        "christ_church_000125.jpg",
-        "oxford_003062.jpg",
-        "ashmolean_000211.jpg",
-        "oxford_002570.jpg",
-        "hertford_000039.jpg"
-      ],
-      "cornmarket_000004.jpg": [
-        "christ_church_001136.jpg",
-        "oxford_001707.jpg",
-        "new_000373.jpg",
-        "balliol_000144.jpg",
-        "radcliffe_camera_000279.jpg"
-      ],
-      "hertford_000008.jpg": [
-        "oxford_003293.jpg",
-        "worcester_000075.jpg",
-        "magdalen_000340.jpg",
-        "magdalen_000040.jpg",
-        "oxford_000583.jpg"
-      ],
-      "jesus_000000.jpg": [
-        "magdalen_000365.jpg",
-        "worcester_000193.jpg",
-        "new_000739.jpg",
-        "oxford_003353.jpg",
-        "ashmolean_000274.jpg"
-      ],
-      "keble_000000.jpg": [
-        "jesus_000396.jpg",
-        "christ_church_000338.jpg",
-        "christ_church_000327.jpg",
-        "christ_church_001062.jpg",
-        "keble_000061.jpg"
-      ],
-      "magdalen_000000.jpg": [
-        "worcester_000056.jpg",
-        "new_000649.jpg",
-        "new_000392.jpg",
-        "worcester_000111.jpg",
-        "trinity_000140.jpg"
-      ],
-      "new_000001.jpg": [
-        "oxford_001063.jpg",
-        "magdalen_000775.jpg",
-        "new_000798.jpg",
-        "hertford_000087.jpg",
-        "magdalen_000818.jpg"
-      ],
-      "oriel_000000.jpg": [
-        "oxford_002615.jpg",
-        "balliol_000188.jpg",
-        "bodleian_000043.jpg",
-        "bodleian_000416.jpg",
-        "oxford_002236.jpg"
-      ],
-      "oxford_000006.jpg": [
-        "new_000098.jpg",
-        "christ_church_000380.jpg",
-        "magdalen_000053.jpg",
-        "christ_church_001017.jpg",
-        "pitt_rivers_000056.jpg"
-      ],
-      "pitt_rivers_000000.jpg": [
-        "christ_church_000005.jpg",
-        "magdalen_000786.jpg",
-        "oxford_002197.jpg",
-        "magdalen_000873.jpg",
-        "christ_church_000187.jpg"
-      ],
-      "radcliffe_camera_000000.jpg": [
-        "oxford_000575.jpg",
-        "oxford_001963.jpg",
-        "bodleian_000282.jpg",
-        "oxford_000774.jpg",
-        "oxford_001879.jpg"
-      ],
-      "trinity_000000.jpg": [
-        "oxford_000974.jpg",
-        "magdalen_000826.jpg",
-        "christ_church_000271.jpg",
-        "oxford_002320.jpg",
-        "pitt_rivers_000148.jpg"
-      ],
-      "worcester_000001.jpg": [
-        "oxford_000637.jpg",
-        "magdalen_000058.jpg",
-        "oxford_002615.jpg",
-        "christ_church_001046.jpg",
-        "radcliffe_camera_000457.jpg"
-      ]
-    },
-    "euclidean": {
-      "all_souls_000000.jpg": [
-        "christ_church_001016.jpg",
-        "magdalen_000811.jpg",
-        "oxford_000342.jpg",
-        "all_souls_000054.jpg",
-        "oxford_000592.jpg"
-      ],
-      "ashmolean_000000.jpg": [
-        "ashmolean_000036.jpg",
-        "oxford_002326.jpg",
-        "oxford_001964.jpg",
-        "all_souls_000136.jpg",
-        "oxford_000919.jpg"
-      ],
-      "balliol_000000.jpg": [
-        "christ_church_000227.jpg",
-        "oxford_001115.jpg",
-        "keble_000031.jpg",
-        "magdalen_000239.jpg",
-        "magdalen_000263.jpg"
-      ],
-      "bodleian_000000.jpg": [
-        "oxford_002286.jpg",
-        "radcliffe_camera_000183.jpg",
-        "radcliffe_camera_000370.jpg",
-        "radcliffe_camera_000201.jpg",
-        "new_000298.jpg"
-      ],
-      "christ_church_000000.jpg": [
-        "magdalen_000530.jpg",
-        "oxford_002570.jpg",
-        "oxford_003062.jpg",
-        "christ_church_000125.jpg",
-        "hertford_000039.jpg"
-      ],
-      "cornmarket_000004.jpg": [
-        "christ_church_001136.jpg",
-        "oxford_001707.jpg",
-        "new_000373.jpg",
-        "balliol_000144.jpg",
-        "oxford_002553.jpg"
-      ],
-      "hertford_000008.jpg": [
-        "oxford_003293.jpg",
-        "worcester_000075.jpg",
-        "oxford_000583.jpg",
-        "magdalen_000040.jpg",
-        "magdalen_000340.jpg"
-      ],
-      "jesus_000000.jpg": [
-        "magdalen_000365.jpg",
-        "worcester_000193.jpg",
-        "new_000739.jpg",
-        "oxford_003353.jpg",
-        "ashmolean_000059.jpg"
-      ],
-      "keble_000000.jpg": [
-        "jesus_000396.jpg",
-        "christ_church_000338.jpg",
-        "christ_church_000327.jpg",
-        "magdalen_000137.jpg",
-        "christ_church_000324.jpg"
-      ],
-      "magdalen_000000.jpg": [
-        "worcester_000056.jpg",
-        "new_000649.jpg",
-        "new_000392.jpg",
-        "trinity_000140.jpg",
-        "worcester_000111.jpg"
-      ],
-      "new_000001.jpg": [
-        "magdalen_000775.jpg",
-        "oxford_001063.jpg",
-        "new_000798.jpg",
-        "hertford_000087.jpg",
-        "magdalen_000818.jpg"
-      ],
-      "oriel_000000.jpg": [
-        "oxford_002615.jpg",
-        "balliol_000188.jpg",
-        "oxford_002236.jpg",
-        "bodleian_000416.jpg",
-        "bodleian_000043.jpg"
-      ],
-      "oxford_000006.jpg": [
-        "new_000098.jpg",
-        "christ_church_000380.jpg",
-        "magdalen_000053.jpg",
-        "pitt_rivers_000056.jpg",
-        "balliol_000099.jpg"
-      ],
-      "pitt_rivers_000000.jpg": [
-        "christ_church_000005.jpg",
-        "magdalen_000786.jpg",
-        "magdalen_000873.jpg",
-        "christ_church_000187.jpg",
-        "oxford_002197.jpg"
-      ],
-      "radcliffe_camera_000000.jpg": [
-        "oxford_000575.jpg",
-        "oxford_001963.jpg",
-        "new_000230.jpg",
-        "oxford_003543.jpg",
-        "oxford_003383.jpg"
-      ],
-      "trinity_000000.jpg": [
-        "magdalen_000826.jpg",
-        "oxford_000974.jpg",
-        "oxford_002320.jpg",
-        "pitt_rivers_000148.jpg",
-        "bodleian_000328.jpg"
-      ],
-      "worcester_000001.jpg": [
-        "oxford_000637.jpg",
-        "oxford_002615.jpg",
-        "christ_church_001046.jpg",
-        "radcliffe_camera_000457.jpg",
-        "magdalen_000058.jpg"
-      ]
-    }
+  "flow1_base_sift_bovw": {
+    "all_souls_000000.jpg": [
+      "magdalen_001010.jpg",
+      "magdalen_000811.jpg",
+      "jesus_000398.jpg",
+      "pitt_rivers_000149.jpg",
+      "oxford_001970.jpg"
+    ],
+    "ashmolean_000000.jpg": [
+      "oxford_001964.jpg",
+      "balliol_000113.jpg",
+      "radcliffe_camera_000478.jpg",
+      "oxford_002349.jpg",
+      "new_001048.jpg"
+    ],
+    "balliol_000000.jpg": [
+      "magdalen_000239.jpg",
+      "oxford_001115.jpg",
+      "oxford_003407.jpg",
+      "oxford_003020.jpg",
+      "magdalen_000177.jpg"
+    ],
+    "bodleian_000000.jpg": [
+      "oxford_002841.jpg",
+      "christ_church_000293.jpg",
+      "oxford_002124.jpg",
+      "oxford_001190.jpg",
+      "christ_church_000721.jpg"
+    ],
+    "christ_church_000000.jpg": [
+      "oxford_002570.jpg",
+      "christ_church_000125.jpg",
+      "all_souls_000210.jpg",
+      "hertford_000039.jpg",
+      "oxford_002294.jpg"
+    ],
+    "cornmarket_000004.jpg": [
+      "new_000373.jpg",
+      "oxford_001281.jpg",
+      "oxford_001026.jpg",
+      "oxford_002015.jpg",
+      "magdalen_000195.jpg"
+    ],
+    "hertford_000008.jpg": [
+      "magdalen_000731.jpg",
+      "worcester_000142.jpg",
+      "magdalen_000340.jpg",
+      "magdalen_000179.jpg",
+      "balliol_000080.jpg"
+    ],
+    "jesus_000000.jpg": [
+      "magdalen_000365.jpg",
+      "jesus_000194.jpg",
+      "new_000656.jpg",
+      "new_000693.jpg",
+      "oxford_000627.jpg"
+    ],
+    "keble_000000.jpg": [
+      "oxford_001665.jpg",
+      "magdalen_000752.jpg",
+      "christ_church_001062.jpg",
+      "pitt_rivers_000144.jpg",
+      "magdalen_001010.jpg"
+    ],
+    "magdalen_000000.jpg": [
+      "new_000683.jpg",
+      "oxford_001721.jpg",
+      "magdalen_000672.jpg",
+      "worcester_000056.jpg",
+      "keble_000079.jpg"
+    ],
+    "new_000001.jpg": [
+      "radcliffe_camera_000370.jpg",
+      "christ_church_000757.jpg",
+      "magdalen_000775.jpg",
+      "new_000798.jpg",
+      "bodleian_000398.jpg"
+    ],
+    "oriel_000000.jpg": [
+      "oxford_002615.jpg",
+      "oxford_003098.jpg",
+      "bodleian_000043.jpg",
+      "magdalen_000446.jpg",
+      "christ_church_000822.jpg"
+    ],
+    "oxford_000006.jpg": [
+      "oxford_000583.jpg",
+      "christ_church_000833.jpg",
+      "oxford_000521.jpg",
+      "oxford_001434.jpg",
+      "magdalen_001119.jpg"
+    ],
+    "pitt_rivers_000000.jpg": [
+      "magdalen_000280.jpg",
+      "magdalen_000873.jpg",
+      "christ_church_000935.jpg",
+      "oxford_002200.jpg",
+      "christ_church_000005.jpg"
+    ],
+    "radcliffe_camera_000000.jpg": [
+      "oxford_002518.jpg",
+      "oxford_002625.jpg",
+      "magdalen_000973.jpg",
+      "keble_000081.jpg",
+      "worcester_000128.jpg"
+    ],
+    "trinity_000000.jpg": [
+      "oxford_000974.jpg",
+      "christ_church_000271.jpg",
+      "radcliffe_camera_000166.jpg",
+      "pitt_rivers_000148.jpg",
+      "bodleian_000328.jpg"
+    ],
+    "worcester_000001.jpg": [
+      "oxford_000978.jpg",
+      "radcliffe_camera_000004.jpg",
+      "radcliffe_camera_000012.jpg",
+      "radcliffe_camera_000457.jpg",
+      "oxford_002066.jpg"
+    ]
   },
-  "hog": {
-    "cosine": {
-      "all_souls_000000.jpg": [
-        "all_souls_000085.jpg",
-        "christ_church_000584.jpg",
-        "oxford_001480.jpg",
-        "oxford_001906.jpg",
-        "pitt_rivers_000040.jpg"
-      ],
-      "ashmolean_000000.jpg": [
-        "oxford_003520.jpg",
-        "oxford_002547.jpg",
-        "keble_000155.jpg",
-        "oxford_001480.jpg",
-        "keble_000247.jpg"
-      ],
-      "balliol_000000.jpg": [
-        "christ_church_000158.jpg",
-        "trinity_000270.jpg",
-        "oxford_002374.jpg",
-        "christ_church_000630.jpg",
-        "christ_church_000221.jpg"
-      ],
-      "bodleian_000000.jpg": [
-        "oxford_002261.jpg",
-        "oxford_000405.jpg",
-        "balliol_000108.jpg",
-        "all_souls_000176.jpg",
-        "new_000806.jpg"
-      ],
-      "christ_church_000000.jpg": [
-        "magdalen_000121.jpg",
-        "worcester_000119.jpg",
-        "balliol_000108.jpg",
-        "new_000427.jpg",
-        "oxford_001144.jpg"
-      ],
-      "cornmarket_000004.jpg": [
-        "oxford_003622.jpg",
-        "oxford_000586.jpg",
-        "christ_church_000658.jpg",
-        "oxford_003298.jpg",
-        "oxford_003466.jpg"
-      ],
-      "hertford_000008.jpg": [
-        "oxford_000481.jpg",
-        "oxford_003456.jpg",
-        "magdalen_000132.jpg",
-        "oriel_000033.jpg",
-        "oxford_002925.jpg"
-      ],
-      "jesus_000000.jpg": [
-        "oxford_002595.jpg",
-        "oxford_000808.jpg",
-        "keble_000102.jpg",
-        "ashmolean_000278.jpg",
-        "oxford_000073.jpg"
-      ],
-      "keble_000000.jpg": [
-        "oxford_003094.jpg",
-        "christ_church_000327.jpg",
-        "christ_church_000162.jpg",
-        "christ_church_000338.jpg",
-        "christ_church_000584.jpg"
-      ],
-      "magdalen_000000.jpg": [
-        "oxford_001696.jpg",
-        "magdalen_000180.jpg",
-        "christ_church_000221.jpg",
-        "christ_church_001055.jpg",
-        "oxford_002374.jpg"
-      ],
-      "new_000001.jpg": [
-        "hertford_000086.jpg",
-        "keble_000019.jpg",
-        "all_souls_000176.jpg",
-        "oxford_001119.jpg",
-        "keble_000209.jpg"
-      ],
-      "oriel_000000.jpg": [
-        "new_000339.jpg",
-        "oxford_000909.jpg",
-        "christ_church_000815.jpg",
-        "magdalen_000177.jpg",
-        "christ_church_000989.jpg"
-      ],
-      "oxford_000006.jpg": [
-        "oxford_001119.jpg",
-        "oxford_002839.jpg",
-        "oxford_003270.jpg",
-        "christ_church_000546.jpg",
-        "trinity_000052.jpg"
-      ],
-      "pitt_rivers_000000.jpg": [
-        "all_souls_000134.jpg",
-        "trinity_000197.jpg",
-        "oxford_002509.jpg",
-        "oxford_001906.jpg",
-        "oxford_000425.jpg"
-      ],
-      "radcliffe_camera_000000.jpg": [
-        "oxford_000518.jpg",
-        "balliol_000181.jpg",
-        "oxford_001906.jpg",
-        "new_000427.jpg",
-        "balliol_000204.jpg"
-      ],
-      "trinity_000000.jpg": [
-        "ashmolean_000278.jpg",
-        "keble_000102.jpg",
-        "ashmolean_000172.jpg",
-        "oxford_002595.jpg",
-        "oxford_002837.jpg"
-      ],
-      "worcester_000001.jpg": [
-        "magdalen_000177.jpg",
-        "oxford_000082.jpg",
-        "ashmolean_000280.jpg",
-        "magdalen_000994.jpg",
-        "new_000446.jpg"
-      ]
-    },
-    "euclidean": {
-      "all_souls_000000.jpg": [
-        "all_souls_000085.jpg",
-        "christ_church_000584.jpg",
-        "oxford_001480.jpg",
-        "oxford_001906.jpg",
-        "pitt_rivers_000040.jpg"
-      ],
-      "ashmolean_000000.jpg": [
-        "oxford_003520.jpg",
-        "oxford_002547.jpg",
-        "keble_000155.jpg",
-        "oxford_001480.jpg",
-        "keble_000247.jpg"
-      ],
-      "balliol_000000.jpg": [
-        "christ_church_000158.jpg",
-        "trinity_000270.jpg",
-        "oxford_002374.jpg",
-        "christ_church_000630.jpg",
-        "christ_church_000221.jpg"
-      ],
-      "bodleian_000000.jpg": [
-        "oxford_002261.jpg",
-        "oxford_000405.jpg",
-        "balliol_000108.jpg",
-        "all_souls_000176.jpg",
-        "new_000806.jpg"
-      ],
-      "christ_church_000000.jpg": [
-        "magdalen_000121.jpg",
-        "worcester_000119.jpg",
-        "balliol_000108.jpg",
-        "new_000427.jpg",
-        "oxford_001144.jpg"
-      ],
-      "cornmarket_000004.jpg": [
-        "oxford_003622.jpg",
-        "oxford_000586.jpg",
-        "christ_church_000658.jpg",
-        "oxford_003298.jpg",
-        "oxford_003466.jpg"
-      ],
-      "hertford_000008.jpg": [
-        "oxford_000481.jpg",
-        "oxford_003456.jpg",
-        "magdalen_000132.jpg",
-        "oriel_000033.jpg",
-        "oxford_002925.jpg"
-      ],
-      "jesus_000000.jpg": [
-        "oxford_002595.jpg",
-        "oxford_000808.jpg",
-        "keble_000102.jpg",
-        "ashmolean_000278.jpg",
-        "oxford_000073.jpg"
-      ],
-      "keble_000000.jpg": [
-        "oxford_003094.jpg",
-        "christ_church_000327.jpg",
-        "christ_church_000162.jpg",
-        "christ_church_000338.jpg",
-        "christ_church_000584.jpg"
-      ],
-      "magdalen_000000.jpg": [
-        "oxford_001696.jpg",
-        "magdalen_000180.jpg",
-        "christ_church_000221.jpg",
-        "christ_church_001055.jpg",
-        "oxford_002374.jpg"
-      ],
-      "new_000001.jpg": [
-        "hertford_000086.jpg",
-        "keble_000019.jpg",
-        "all_souls_000176.jpg",
-        "oxford_001119.jpg",
-        "keble_000209.jpg"
-      ],
-      "oriel_000000.jpg": [
-        "new_000339.jpg",
-        "oxford_000909.jpg",
-        "christ_church_000815.jpg",
-        "magdalen_000177.jpg",
-        "christ_church_000989.jpg"
-      ],
-      "oxford_000006.jpg": [
-        "oxford_001119.jpg",
-        "oxford_002839.jpg",
-        "oxford_003270.jpg",
-        "christ_church_000546.jpg",
-        "trinity_000052.jpg"
-      ],
-      "pitt_rivers_000000.jpg": [
-        "all_souls_000134.jpg",
-        "trinity_000197.jpg",
-        "oxford_002509.jpg",
-        "oxford_001906.jpg",
-        "oxford_000425.jpg"
-      ],
-      "radcliffe_camera_000000.jpg": [
-        "oxford_000518.jpg",
-        "balliol_000181.jpg",
-        "oxford_001906.jpg",
-        "new_000427.jpg",
-        "balliol_000204.jpg"
-      ],
-      "trinity_000000.jpg": [
-        "ashmolean_000278.jpg",
-        "keble_000102.jpg",
-        "ashmolean_000172.jpg",
-        "oxford_002595.jpg",
-        "oxford_002837.jpg"
-      ],
-      "worcester_000001.jpg": [
-        "magdalen_000177.jpg",
-        "oxford_000082.jpg",
-        "ashmolean_000280.jpg",
-        "magdalen_000994.jpg",
-        "new_000446.jpg"
-      ]
-    }
+  "flow2_rootsift_tfidf_dist_func": {
+    "all_souls_000000.jpg": [
+      "magdalen_000424.jpg",
+      "christ_church_000360.jpg",
+      "oxford_000607.jpg",
+      "christ_church_001035.jpg",
+      "oxford_001068.jpg"
+    ],
+    "ashmolean_000000.jpg": [
+      "hertford_000081.jpg",
+      "worcester_000194.jpg",
+      "oxford_001563.jpg",
+      "oxford_000352.jpg",
+      "oxford_001927.jpg"
+    ],
+    "balliol_000000.jpg": [
+      "pitt_rivers_000115.jpg",
+      "magdalen_000177.jpg",
+      "magdalen_000239.jpg",
+      "oxford_001726.jpg",
+      "hertford_000110.jpg"
+    ],
+    "bodleian_000000.jpg": [
+      "bodleian_000396.jpg",
+      "magdalen_001155.jpg",
+      "christ_church_000985.jpg",
+      "christ_church_001029.jpg",
+      "christ_church_000330.jpg"
+    ],
+    "christ_church_000000.jpg": [
+      "oxford_002728.jpg",
+      "trinity_000016.jpg",
+      "new_000199.jpg",
+      "oxford_001121.jpg",
+      "oriel_000022.jpg"
+    ],
+    "cornmarket_000004.jpg": [
+      "oxford_003466.jpg",
+      "cornmarket_000105.jpg",
+      "new_000283.jpg",
+      "oxford_000056.jpg",
+      "oxford_002966.jpg"
+    ],
+    "hertford_000008.jpg": [
+      "balliol_000115.jpg",
+      "radcliffe_camera_000333.jpg",
+      "christ_church_000343.jpg",
+      "magdalen_000040.jpg",
+      "hertford_000068.jpg"
+    ],
+    "jesus_000000.jpg": [
+      "new_000224.jpg",
+      "oxford_002190.jpg",
+      "oxford_001294.jpg",
+      "ashmolean_000262.jpg",
+      "oxford_001395.jpg"
+    ],
+    "keble_000000.jpg": [
+      "magdalen_000563.jpg",
+      "oxford_002815.jpg",
+      "christ_church_000327.jpg",
+      "jesus_000396.jpg",
+      "oxford_001665.jpg"
+    ],
+    "magdalen_000000.jpg": [
+      "oxford_002800.jpg",
+      "christ_church_001158.jpg",
+      "oxford_002400.jpg",
+      "christ_church_000643.jpg",
+      "new_000442.jpg"
+    ],
+    "new_000001.jpg": [
+      "magdalen_000078.jpg",
+      "christ_church_000998.jpg",
+      "oxford_003388.jpg",
+      "bodleian_000340.jpg",
+      "bodleian_000345.jpg"
+    ],
+    "oriel_000000.jpg": [
+      "new_000798.jpg",
+      "hertford_000025.jpg",
+      "bodleian_000416.jpg",
+      "oxford_003111.jpg",
+      "christ_church_000451.jpg"
+    ],
+    "oxford_000006.jpg": [
+      "hertford_000052.jpg",
+      "oxford_000184.jpg",
+      "magdalen_000973.jpg",
+      "christ_church_000827.jpg",
+      "christ_church_000199.jpg"
+    ],
+    "pitt_rivers_000000.jpg": [
+      "oxford_001531.jpg",
+      "oxford_001904.jpg",
+      "oxford_002105.jpg",
+      "trinity_000081.jpg",
+      "magdalen_000855.jpg"
+    ],
+    "radcliffe_camera_000000.jpg": [
+      "magdalen_000830.jpg",
+      "christ_church_000271.jpg",
+      "oxford_002745.jpg",
+      "oxford_001835.jpg",
+      "all_souls_000084.jpg"
+    ],
+    "trinity_000000.jpg": [
+      "new_000154.jpg",
+      "oxford_003570.jpg",
+      "oxford_000789.jpg",
+      "ashmolean_000229.jpg",
+      "bodleian_000338.jpg"
+    ],
+    "worcester_000001.jpg": [
+      "oxford_003275.jpg",
+      "oxford_000673.jpg",
+      "oxford_000313.jpg",
+      "magdalen_000004.jpg",
+      "oxford_002517.jpg"
+    ]
   },
-  "learned": {
-    "cosine": {
-      "all_souls_000000.jpg": [
-        "keble_000061.jpg",
-        "oxford_001192.jpg",
-        "magdalen_000424.jpg",
-        "magdalen_000137.jpg",
-        "oxford_003145.jpg"
-      ],
-      "ashmolean_000000.jpg": [
-        "oriel_000119.jpg",
-        "oxford_003073.jpg",
-        "magdalen_001048.jpg",
-        "ashmolean_000286.jpg",
-        "magdalen_001140.jpg"
-      ],
-      "balliol_000000.jpg": [
-        "oxford_003058.jpg",
-        "oxford_001072.jpg",
-        "oxford_002470.jpg",
-        "keble_000209.jpg",
-        "magdalen_000239.jpg"
-      ],
-      "bodleian_000000.jpg": [
-        "oxford_001949.jpg",
-        "new_000655.jpg",
-        "oxford_002172.jpg",
-        "trinity_000362.jpg",
-        "oxford_001505.jpg"
-      ],
-      "christ_church_000000.jpg": [
-        "ashmolean_000211.jpg",
-        "oxford_002837.jpg",
-        "ashmolean_000221.jpg",
-        "jesus_000319.jpg",
-        "oxford_003267.jpg"
-      ],
-      "cornmarket_000004.jpg": [
-        "pitt_rivers_000075.jpg",
-        "christ_church_000076.jpg",
-        "oxford_001707.jpg",
-        "oxford_001895.jpg",
-        "ashmolean_000279.jpg"
-      ],
-      "hertford_000008.jpg": [
-        "radcliffe_camera_000294.jpg",
-        "oxford_002518.jpg",
-        "oxford_003014.jpg",
-        "new_000924.jpg",
-        "christ_church_000343.jpg"
-      ],
-      "jesus_000000.jpg": [
-        "oxford_000584.jpg",
-        "jesus_000042.jpg",
-        "oxford_000873.jpg",
-        "oxford_002149.jpg",
-        "new_000693.jpg"
-      ],
-      "keble_000000.jpg": [
-        "christ_church_000338.jpg",
-        "new_000603.jpg",
-        "jesus_000396.jpg",
-        "christ_church_000584.jpg",
-        "jesus_000343.jpg"
-      ],
-      "magdalen_000000.jpg": [
-        "worcester_000056.jpg",
-        "christ_church_000986.jpg",
-        "christ_church_001158.jpg",
-        "new_000442.jpg",
-        "magdalen_000052.jpg"
-      ],
-      "new_000001.jpg": [
-        "magdalen_000775.jpg",
-        "oxford_001343.jpg",
-        "magdalen_000044.jpg",
-        "christ_church_000400.jpg",
-        "oxford_003388.jpg"
-      ],
-      "oriel_000000.jpg": [
-        "oxford_000236.jpg",
-        "oriel_000037.jpg",
-        "oxford_002980.jpg",
-        "christ_church_001033.jpg",
-        "oxford_001392.jpg"
-      ],
-      "oxford_000006.jpg": [
-        "christ_church_000208.jpg",
-        "pitt_rivers_000126.jpg",
-        "oxford_000742.jpg",
-        "christ_church_000380.jpg",
-        "christ_church_001047.jpg"
-      ],
-      "pitt_rivers_000000.jpg": [
-        "magdalen_000634.jpg",
-        "keble_000191.jpg",
-        "trinity_000069.jpg",
-        "new_000967.jpg",
-        "oriel_000050.jpg"
-      ],
-      "radcliffe_camera_000000.jpg": [
-        "oxford_002811.jpg",
-        "radcliffe_camera_000166.jpg",
-        "radcliffe_camera_000453.jpg",
-        "radcliffe_camera_000361.jpg",
-        "christ_church_000271.jpg"
-      ],
-      "trinity_000000.jpg": [
-        "balliol_000040.jpg",
-        "trinity_000166.jpg",
-        "new_000154.jpg",
-        "all_souls_000003.jpg",
-        "oxford_001503.jpg"
-      ],
-      "worcester_000001.jpg": [
-        "oxford_002334.jpg",
-        "christ_church_000314.jpg",
-        "oxford_001890.jpg",
-        "all_souls_000214.jpg",
-        "oxford_001977.jpg"
-      ]
-    }
+  "flow3_logistic_score_fusion": {
+    "all_souls_000000.jpg": [
+      "bodleian_000128.jpg",
+      "oxford_001928.jpg",
+      "oxford_001906.jpg",
+      "radcliffe_camera_000518.jpg",
+      "new_000026.jpg"
+    ],
+    "ashmolean_000000.jpg": [
+      "keble_000021.jpg",
+      "magdalen_000380.jpg",
+      "oxford_001894.jpg",
+      "oriel_000119.jpg",
+      "oxford_003520.jpg"
+    ],
+    "balliol_000000.jpg": [
+      "hertford_000095.jpg",
+      "oxford_002576.jpg",
+      "oxford_002277.jpg",
+      "christ_church_000051.jpg",
+      "balliol_000103.jpg"
+    ],
+    "bodleian_000000.jpg": [
+      "magdalen_001034.jpg",
+      "christ_church_000985.jpg",
+      "trinity_000283.jpg",
+      "oxford_001953.jpg",
+      "oxford_000688.jpg"
+    ],
+    "christ_church_000000.jpg": [
+      "oxford_001889.jpg",
+      "christ_church_000752.jpg",
+      "hertford_000091.jpg",
+      "new_000199.jpg",
+      "all_souls_000072.jpg"
+    ],
+    "cornmarket_000004.jpg": [
+      "oxford_001906.jpg",
+      "christ_church_000317.jpg",
+      "magdalen_001057.jpg",
+      "oxford_002887.jpg",
+      "oxford_003513.jpg"
+    ],
+    "hertford_000008.jpg": [
+      "keble_000169.jpg",
+      "all_souls_000076.jpg",
+      "bodleian_000383.jpg",
+      "oxford_000708.jpg",
+      "oxford_001906.jpg"
+    ],
+    "jesus_000000.jpg": [
+      "magdalen_000618.jpg",
+      "oriel_000091.jpg",
+      "magdalen_000749.jpg",
+      "christ_church_001027.jpg",
+      "new_000867.jpg"
+    ],
+    "keble_000000.jpg": [
+      "christ_church_001104.jpg",
+      "oxford_000358.jpg",
+      "keble_000064.jpg",
+      "jesus_000317.jpg",
+      "oxford_002376.jpg"
+    ],
+    "magdalen_000000.jpg": [
+      "magdalen_000672.jpg",
+      "oxford_002801.jpg",
+      "new_000808.jpg",
+      "magdalen_000259.jpg",
+      "magdalen_000110.jpg"
+    ],
+    "new_000001.jpg": [
+      "bodleian_000010.jpg",
+      "oxford_002307.jpg",
+      "radcliffe_camera_000370.jpg",
+      "oxford_001831.jpg",
+      "magdalen_000164.jpg"
+    ],
+    "oriel_000000.jpg": [
+      "new_000339.jpg",
+      "magdalen_000474.jpg",
+      "oxford_002679.jpg",
+      "all_souls_000146.jpg",
+      "oxford_000940.jpg"
+    ],
+    "oxford_000006.jpg": [
+      "oxford_003046.jpg",
+      "magdalen_001119.jpg",
+      "oxford_001265.jpg",
+      "oxford_001906.jpg",
+      "christ_church_000576.jpg"
+    ],
+    "pitt_rivers_000000.jpg": [
+      "oxford_000533.jpg",
+      "pitt_rivers_000141.jpg",
+      "hertford_000111.jpg",
+      "oxford_001087.jpg",
+      "oxford_001906.jpg"
+    ],
+    "radcliffe_camera_000000.jpg": [
+      "radcliffe_camera_000219.jpg",
+      "balliol_000073.jpg",
+      "christ_church_000814.jpg",
+      "oxford_001047.jpg",
+      "hertford_000089.jpg"
+    ],
+    "trinity_000000.jpg": [
+      "trinity_000340.jpg",
+      "new_000227.jpg",
+      "magdalen_000283.jpg",
+      "oxford_001397.jpg",
+      "oxford_002771.jpg"
+    ],
+    "worcester_000001.jpg": [
+      "bodleian_000062.jpg",
+      "all_souls_000214.jpg",
+      "oxford_001121.jpg",
+      "oxford_002192.jpg",
+      "oxford_000926.jpg"
+    ]
+  },
+  "flow4_balanced_hybrid": {
+    "all_souls_000000.jpg": [
+      "oxford_001119.jpg",
+      "christ_church_000360.jpg",
+      "oxford_002278.jpg",
+      "magdalen_001010.jpg",
+      "magdalen_000424.jpg"
+    ],
+    "ashmolean_000000.jpg": [
+      "oxford_001964.jpg",
+      "ashmolean_000036.jpg",
+      "balliol_000189.jpg",
+      "oxford_002518.jpg",
+      "oxford_000919.jpg"
+    ],
+    "balliol_000000.jpg": [
+      "magdalen_000239.jpg",
+      "magdalen_000177.jpg",
+      "oxford_001106.jpg",
+      "christ_church_000535.jpg",
+      "oxford_000916.jpg"
+    ],
+    "bodleian_000000.jpg": [
+      "oxford_001007.jpg",
+      "bodleian_000370.jpg",
+      "magdalen_000039.jpg",
+      "oxford_002841.jpg",
+      "oxford_002064.jpg"
+    ],
+    "christ_church_000000.jpg": [
+      "oxford_002570.jpg",
+      "christ_church_000125.jpg",
+      "ashmolean_000260.jpg",
+      "magdalen_000020.jpg",
+      "bodleian_000101.jpg"
+    ],
+    "cornmarket_000004.jpg": [
+      "cornmarket_000105.jpg",
+      "christ_church_000300.jpg",
+      "christ_church_000685.jpg",
+      "oxford_003466.jpg",
+      "jesus_000334.jpg"
+    ],
+    "hertford_000008.jpg": [
+      "magdalen_000731.jpg",
+      "magdalen_000040.jpg",
+      "worcester_000142.jpg",
+      "magdalen_000340.jpg",
+      "balliol_000064.jpg"
+    ],
+    "jesus_000000.jpg": [
+      "new_000360.jpg",
+      "new_000656.jpg",
+      "oxford_000627.jpg",
+      "new_000693.jpg",
+      "magdalen_000200.jpg"
+    ],
+    "keble_000000.jpg": [
+      "jesus_000396.jpg",
+      "magdalen_001010.jpg",
+      "magdalen_000752.jpg",
+      "christ_church_000327.jpg",
+      "oxford_003537.jpg"
+    ],
+    "magdalen_000000.jpg": [
+      "new_000649.jpg",
+      "keble_000079.jpg",
+      "new_000382.jpg",
+      "oxford_000983.jpg",
+      "trinity_000140.jpg"
+    ],
+    "new_000001.jpg": [
+      "oxford_000351.jpg",
+      "christ_church_000757.jpg",
+      "magdalen_000044.jpg",
+      "bodleian_000108.jpg",
+      "radcliffe_camera_000138.jpg"
+    ],
+    "oriel_000000.jpg": [
+      "oxford_002516.jpg",
+      "bodleian_000043.jpg",
+      "oxford_002615.jpg",
+      "oxford_001190.jpg",
+      "oxford_000890.jpg"
+    ],
+    "oxford_000006.jpg": [
+      "worcester_000174.jpg",
+      "christ_church_000343.jpg",
+      "magdalen_000988.jpg",
+      "trinity_000225.jpg",
+      "oxford_001758.jpg"
+    ],
+    "pitt_rivers_000000.jpg": [
+      "oxford_003453.jpg",
+      "oxford_002197.jpg",
+      "christ_church_000935.jpg",
+      "keble_000104.jpg",
+      "christ_church_001126.jpg"
+    ],
+    "radcliffe_camera_000000.jpg": [
+      "magdalen_000588.jpg",
+      "radcliffe_camera_000166.jpg",
+      "radcliffe_camera_000015.jpg",
+      "oxford_000774.jpg",
+      "oxford_003025.jpg"
+    ],
+    "trinity_000000.jpg": [
+      "oxford_000974.jpg",
+      "magdalen_000826.jpg",
+      "oxford_002276.jpg",
+      "christ_church_000271.jpg",
+      "pitt_rivers_000148.jpg"
+    ],
+    "worcester_000001.jpg": [
+      "oxford_000978.jpg",
+      "oxford_002066.jpg",
+      "oxford_003006.jpg",
+      "oxford_001190.jpg",
+      "oxford_000371.jpg"
+    ]
+  },
+  "reference_hog": {
+    "all_souls_000000.jpg": [
+      "all_souls_000085.jpg",
+      "christ_church_000584.jpg",
+      "oxford_001480.jpg",
+      "pitt_rivers_000040.jpg",
+      "oxford_003112.jpg"
+    ],
+    "ashmolean_000000.jpg": [
+      "oxford_003520.jpg",
+      "oxford_002547.jpg",
+      "keble_000155.jpg",
+      "oxford_001480.jpg",
+      "keble_000247.jpg"
+    ],
+    "balliol_000000.jpg": [
+      "christ_church_000158.jpg",
+      "trinity_000270.jpg",
+      "oxford_002374.jpg",
+      "christ_church_000221.jpg",
+      "christ_church_000630.jpg"
+    ],
+    "bodleian_000000.jpg": [
+      "oxford_002261.jpg",
+      "balliol_000108.jpg",
+      "oxford_000405.jpg",
+      "all_souls_000176.jpg",
+      "oxford_002925.jpg"
+    ],
+    "christ_church_000000.jpg": [
+      "new_000427.jpg",
+      "magdalen_000121.jpg",
+      "worcester_000119.jpg",
+      "balliol_000108.jpg",
+      "oxford_000061.jpg"
+    ],
+    "cornmarket_000004.jpg": [
+      "oxford_003622.jpg",
+      "oxford_000586.jpg",
+      "christ_church_000658.jpg",
+      "oxford_003466.jpg",
+      "oxford_003298.jpg"
+    ],
+    "hertford_000008.jpg": [
+      "oxford_000481.jpg",
+      "oxford_003456.jpg",
+      "magdalen_000132.jpg",
+      "oriel_000033.jpg",
+      "oxford_000730.jpg"
+    ],
+    "jesus_000000.jpg": [
+      "oxford_002595.jpg",
+      "oxford_000808.jpg",
+      "keble_000102.jpg",
+      "ashmolean_000278.jpg",
+      "oxford_000073.jpg"
+    ],
+    "keble_000000.jpg": [
+      "oxford_003094.jpg",
+      "christ_church_000327.jpg",
+      "christ_church_000162.jpg",
+      "christ_church_000338.jpg",
+      "christ_church_000584.jpg"
+    ],
+    "magdalen_000000.jpg": [
+      "oxford_001696.jpg",
+      "magdalen_000180.jpg",
+      "christ_church_000221.jpg",
+      "christ_church_001055.jpg",
+      "christ_church_000546.jpg"
+    ],
+    "new_000001.jpg": [
+      "hertford_000086.jpg",
+      "keble_000019.jpg",
+      "oxford_001119.jpg",
+      "keble_000209.jpg",
+      "balliol_000059.jpg"
+    ],
+    "oriel_000000.jpg": [
+      "new_000339.jpg",
+      "oxford_000909.jpg",
+      "christ_church_000815.jpg",
+      "magdalen_000177.jpg",
+      "christ_church_000989.jpg"
+    ],
+    "oxford_000006.jpg": [
+      "oxford_001119.jpg",
+      "oxford_002839.jpg",
+      "oxford_003270.jpg",
+      "christ_church_000546.jpg",
+      "trinity_000052.jpg"
+    ],
+    "pitt_rivers_000000.jpg": [
+      "all_souls_000134.jpg",
+      "trinity_000197.jpg",
+      "oxford_002509.jpg",
+      "oxford_001906.jpg",
+      "oxford_001264.jpg"
+    ],
+    "radcliffe_camera_000000.jpg": [
+      "oxford_000518.jpg",
+      "new_000427.jpg",
+      "balliol_000181.jpg",
+      "balliol_000204.jpg",
+      "oxford_001885.jpg"
+    ],
+    "trinity_000000.jpg": [
+      "ashmolean_000278.jpg",
+      "keble_000102.jpg",
+      "ashmolean_000172.jpg",
+      "oxford_002595.jpg",
+      "oxford_002837.jpg"
+    ],
+    "worcester_000001.jpg": [
+      "magdalen_000177.jpg",
+      "oxford_000082.jpg",
+      "magdalen_000994.jpg",
+      "ashmolean_000280.jpg",
+      "new_000446.jpg"
+    ]
   }
 }

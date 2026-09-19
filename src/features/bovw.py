@@ -17,11 +17,38 @@ LOGGER = logging.getLogger(__name__)
 
 
 class BoVW:
-    def __init__(self, vocabulary_size: int = 96, nfeatures: int = 800, max_descriptors_per_image: int = 48):
+    def __init__(
+        self,
+        vocabulary_size: int = 96,
+        nfeatures: int = 800,
+        max_descriptors_per_image: int = 48,
+        use_root_sift: bool = False,
+        use_tfidf: bool = False,
+    ):
         self.vocabulary_size = vocabulary_size
         self.nfeatures = nfeatures
         self.max_descriptors_per_image = max_descriptors_per_image
+        self.use_root_sift = use_root_sift
+        self.use_tfidf = use_tfidf
         self.kmeans = None
+        self.idf: np.ndarray | None = None
+
+    @staticmethod
+    def _root_sift(descriptors: np.ndarray) -> np.ndarray:
+        descriptors = descriptors.astype(np.float32)
+        l1 = descriptors.sum(axis=1, keepdims=True)
+        l1[l1 == 0] = 1.0
+        descriptors = descriptors / l1
+        descriptors = np.sqrt(descriptors)
+        l2 = np.linalg.norm(descriptors, axis=1, keepdims=True)
+        l2[l2 == 0] = 1.0
+        return descriptors / l2
+
+    def _prepare_descriptors(self, descriptors: np.ndarray) -> np.ndarray:
+        descriptors = descriptors.astype(np.float32)
+        if self.use_root_sift:
+            descriptors = self._root_sift(descriptors)
+        return descriptors
 
     def sample_descriptors(
         self,
@@ -46,11 +73,12 @@ class BoVW:
             _, descriptors = sift.detectAndCompute(gray, None)
             if descriptors is None or len(descriptors) == 0:
                 return None
+            descriptors = self._prepare_descriptors(descriptors)
             if len(descriptors) > self.max_descriptors_per_image:
                 rng = np.random.default_rng(seed + index)
                 idx = rng.choice(len(descriptors), size=self.max_descriptors_per_image, replace=False)
                 descriptors = descriptors[idx]
-            return descriptors.astype(np.float32)
+            return descriptors
 
         for descriptors in parallel_map(extract, enumerate(paths), "vocabulary descriptor extraction"):
             if descriptors is not None:
@@ -85,7 +113,7 @@ class BoVW:
         self.kmeans.fit(descriptor_matrix)
         return self
 
-    def image_histogram(self, image_path: str | Path) -> np.ndarray:
+    def _raw_image_histogram(self, image_path: str | Path) -> np.ndarray:
         if self.kmeans is None:
             raise ValueError("Vocabulary is not trained yet. Call fit_vocabulary() first.")
 
@@ -97,13 +125,38 @@ class BoVW:
         if descriptors is None or len(descriptors) == 0:
             return np.zeros(self.vocabulary_size, dtype=np.float32)
 
-        labels = self.kmeans.predict(descriptors.astype(np.float32))
+        descriptors = self._prepare_descriptors(descriptors)
+        labels = self.kmeans.predict(descriptors)
         hist, _ = np.histogram(labels, bins=np.arange(self.vocabulary_size + 1))
         hist = hist.astype(np.float32)
         total = hist.sum()
         if total > 0:
             hist /= total
         return hist
+
+    def fit_tfidf(self, histograms: np.ndarray) -> "BoVW":
+        if histograms.ndim != 2:
+            raise ValueError("TF-IDF fitting expects a 2D histogram matrix.")
+        document_frequency = (histograms > 0).sum(axis=0).astype(np.float32)
+        n_documents = float(histograms.shape[0])
+        self.idf = np.log((1.0 + n_documents) / (1.0 + document_frequency)) + 1.0
+        return self
+
+    def transform_histograms(self, histograms: np.ndarray) -> np.ndarray:
+        matrix = np.asarray(histograms, dtype=np.float32)
+        if self.use_tfidf:
+            if self.idf is None:
+                raise ValueError("TF-IDF weights are not fitted yet.")
+            matrix = matrix * self.idf
+        norms = np.linalg.norm(matrix, axis=1, keepdims=True)
+        norms[norms == 0] = 1.0
+        return (matrix / norms).astype(np.float32)
+
+    def image_histogram(self, image_path: str | Path) -> np.ndarray:
+        hist = self._raw_image_histogram(image_path).reshape(1, -1)
+        if self.use_tfidf and self.idf is not None:
+            return self.transform_histograms(hist)[0]
+        return hist[0]
 
     def compute_database_histograms(
         self,
@@ -117,7 +170,7 @@ class BoVW:
         paths = list(image_paths)
 
         def extract(path: str | Path) -> tuple[np.ndarray, str]:
-            hist = self.image_histogram(path)
+            hist = self._raw_image_histogram(path)
             return hist, relative_image_id(Path(path), Path(dataset_root))
 
         results = list(parallel_map(extract, paths, "BoVW database histogram extraction"))
@@ -128,6 +181,9 @@ class BoVW:
             raise ValueError("No image histograms were computed.")
 
         matrix = np.vstack(histograms).astype(np.float32)
+        if self.use_tfidf:
+            self.fit_tfidf(matrix)
+            matrix = self.transform_histograms(matrix)
         return matrix, ids
 
 
@@ -135,12 +191,14 @@ def build_vocabulary_from_dataset(
     dataset_root: str | Path,
     vocabulary_size: int = 96,
     max_images: int | None = None,
+    use_root_sift: bool = False,
+    use_tfidf: bool = False,
 ) -> BoVW:
     paths = list(iter_image_paths(dataset_root))
     if len(paths) == 0:
         raise ValueError(f"No images were found in dataset root: {dataset_root}")
 
-    extractor = BoVW(vocabulary_size=vocabulary_size)
+    extractor = BoVW(vocabulary_size=vocabulary_size, use_root_sift=use_root_sift, use_tfidf=use_tfidf)
     samples = extractor.sample_descriptors(paths, max_images=max_images, max_total_descriptors=120_000)
     LOGGER.info("Fitting %d-word visual vocabulary", vocabulary_size)
     extractor.fit_vocabulary(samples)
